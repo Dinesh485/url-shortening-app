@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./components/nav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App font-poppins">
+      <Nav />
+      <section>
+        <div className="wrapper">
+          <img src={require("./images/illustration-working.svg").default} alt="illustration" className="block w-96" />
+          <div className="flex flex-col justify-center items-center text-center gap-5">
+            <h1 className="text-[40px] font-bold  text-Very-Dark-Violet">More than just shorter links</h1>
+            <p className="text-Grayish-Violet">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+            <a href="/" className="btn">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
