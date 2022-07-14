@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .wrapper{
+        @apply p-6 lg:px-10 max-w-screen-xl mx-auto ;
+    }
+    .btn{
+        @apply bg-Cyan text-white px-8 py-2 rounded-full font-bold box-content whitespace-nowrap transition-all duration-300 hover:brightness-110;
+    }
+   
+}
+
+ 
