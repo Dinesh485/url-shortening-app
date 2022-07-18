@@ -25,3 +25,5 @@ yarn-error.log*
 design
 .next
 .swc
+out
+.netlify

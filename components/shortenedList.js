@@ -1,4 +1,5 @@
 import axios from "axios";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const ShortenedList = ({ linkstoshort, setError, setlinkstoshort }) => {
@@ -51,9 +52,9 @@ const SigleLink = ({ originalLink, setError, setlinkstoshort, linkstoshort }) =>
       <div className="border-b border-solid border-Gray p-4 md:px-6 overflow-hidden lg:border-none">{originalLink}</div>
 
       <div className="p-4 md:px-6 flex flex-col gap-4 lg:flex-row lg:items-center">
-        <a href={shortenedLink} className="block overflow-hidden text-Cyan" target="_blank">
+        <Link href={shortenedLink}><a  className="block overflow-hidden text-Cyan" target="_blank">
           {shortenedLink}
-        </a>
+        </a></Link>
         <button className="btn font-bold rounded-md block lg:w-[120px] lg:box-border lg:px-0 lg:text-center transition-none" onClick = {(e) => copyToClipboard(e,shortenedLink)}>Copy</button>
       </div>
     </div>

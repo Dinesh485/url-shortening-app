@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import Link from 'next/link'
 const Nav = () => {
   const navDropDown = useRef(null)
 
@@ -20,14 +20,14 @@ const Nav = () => {
             <div ref = {navDropDown} className="bg-Dark-Violet text-white font-bold absolute mt-5 rounded-xl h-0  right-0 w-full overflow-hidden group-hover:h-[var(--nav-dropdown-height)] transition-[height] duration-300 ease-out lg:h-auto  lg:bg-transparent lg:text-Grayish-Violet lg:font-medium  lg:transform-none lg:p-0 lg:relative lg:m-0 lg:w-full   lg:justify-between">
               <div className="p-6 py-10 text-[18px] flex flex-col gap-6 md:px-20 lg:flex-row lg:p-0 lg:text-sm lg:w-full lg:justify-between ">
                   <div className = 'flex flex-col gap-6   text-center lg:flex-row lg:items-center'>
-                    <a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 'href="/">Features</a>
-                    <a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 'href="/">Price</a>
-                    <a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 'href="/">Resources</a>
+                    <Link href = '/' ><a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 '>Features</a></Link>
+                    <Link href = '/' ><a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 '>Price</a></Link>
+                    <Link href = '/' ><a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 '>Resources</a></Link>
                   </div>
                   <hr className=" border-Gray/30" />
                   <div className = 'flex flex-col gap-6   text-center lg:flex-row lg:items-center'>
-                    <a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 'href="/">Login</a>
-                    <a href="/" className="btn block  md:w-fit md:mx-auto">Sign Up</a>
+                    <Link href = '/' ><a className  = 'lg:hover:text-Very-Dark-Blue transition-colors duration-150 '>Login</a></Link>
+                    <Link href = '/' ><a  className="btn block  md:w-fit md:mx-auto">Sign Up</a></Link>
                     
                   </div>
               </div>
