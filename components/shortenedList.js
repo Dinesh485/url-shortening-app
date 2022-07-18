@@ -24,7 +24,8 @@ const SigleLink = ({ originalLink, setError, setlinkstoshort, linkstoshort }) =>
         }
       } catch (err) {
         setError(err.response.data.error);
-        const newLinks = linkstoshort.filter(link => link === originalLink);
+        const newLinks = linkstoshort.filter(link => link !== originalLink);
+        
         setlinkstoshort(newLinks);
       }
     };

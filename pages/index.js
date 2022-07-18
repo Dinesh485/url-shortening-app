@@ -35,13 +35,13 @@ function App() {
          <div className="wrapper pt-0 pb-20 md:pb-32">
            <div className="relative pt-28 md:pt-20 lg:pt-24">
            <ShortenUrl setlinkstoshort = {setlinkstoshort} error = {error} setError ={setError} />
-           <ShortenedList linkstoshort = {linkstoshort} setError ={setError} />
+           <ShortenedList linkstoshort = {linkstoshort} setError ={setError} setlinkstoshort ={setlinkstoshort} />
            </div>
            <div className="my-16 text-center md:my-24 lg:mb-8 xl:mt-26">
              <h2 className="text-3xl font-bold text-Very-Dark-Violet mb-4 md:text-4xl">Advanced Statistics</h2>
              <p className="text-Grayish-Violet font-medium md:max-w-[500px] md:mx-auto">Track how your links are performing across the web with our advanced statisitcs dashboard</p>
            </div>
-           <div className="flex flex-col items-center relative lg:flex-row lg:gap-4 xl:gap-8">
+           <div className="flex flex-col items-center relative lg:flex-row lg:gap-4 xl:gap-8 max-w-[1200px] mx-auto">
               <span className="h-full bg-Cyan w-2 absolute top-0 lg:h-2 lg:w-full lg:top-1/2 lg:-translate-y-1/2 "></span>
               <div className="relative p-10 px-6 rounded-lg pt-20 text-center flex flex-col items-center bg-white max-w-lg md:pb-16 lg:items-start lg:text-left lg:aspect-[3/2] lg:max-w-[400px]">
                   <div className="flex items-center justify-center rounded-full   aspect-square bg-Dark-Violet absolute bottom-full translate-y-1/2 w-[88px] ">
