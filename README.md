@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/url-shortener-using-nextjs-tailwindcss-vX5arPaa25](https://www.frontendmentor.io/solutions/url-shortener-using-nextjs-tailwindcss-vX5arPaa25)
-- Live Site URL: [https://thriving-hummingbird-a3ade4.netlify.app/](https://thriving-hummingbird-a3ade4.netlify.app/)
+- Live Site URL: [https://react-url-shortener111.netlify.app](https://react-url-shortener111.netlify.app)
 
 
 ### Built with
